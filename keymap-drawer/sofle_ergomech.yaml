@@ -1,8 +1,8 @@
 layers:
-  default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '', ESC, Q, W, E, R, T, Y, U, I, O, P, BSPC, TAB, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT, Z,
-    X, C, V, B, N, M, ',', ., /, RSHFT, MUTE, LGUI, LALT, LCTRL, lower, RET, SPACE, raise, RCTRL, RALT, RGUI, ENTER, RIGHT, UP ARROW, LEFT, DOWN]
+  default: [ESC, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', TAB, Q, W, E, R, T, Y, U, I, O, P, +, LEFT SHIFT, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT,
+    Z, X, C, V, B, N, M, ',', ., /, BACKSPACE, MUTE, LGUI, LALT, LCTRL, lower, SPACE, RETURN, raise, '[', ']', \, ENTER, RIGHT, UP ARROW, LEFT, DOWN]
   lower:
-  - {t: ▽, type: trans}
+  - '~'
   - F1
   - F2
   - F3
@@ -20,30 +20,30 @@ layers:
   - '3'
   - '4'
   - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
+  - PAGE UP
+  - BACKSPACE
+  - UP ARROW
+  - DELETE
   - '0'
   - F12
   - {t: ▽, type: trans}
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - '&'
-  - '*'
-  - (
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - PAGE DOWN
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
   - )
   - '|'
   - {t: ▽, type: trans}
-  - '='
-  - '-'
-  - +
-  - '{'
-  - '}'
+  - AC UNDO
+  - AC CUT
+  - AC COPY
+  - AC PASTE
+  - CAPSLOCK
   - '['
   - ']'
   - ;
@@ -98,9 +98,9 @@ layers:
   - {t: ▽, type: trans}
   - CLCK
   - PG DN
-  - LEFT
+  - VOLUME DOWN
   - DOWN
-  - RIGHT
+  - VOLUME UP
   - DEL
   - BSPC
   - {t: ▽, type: trans}
@@ -110,9 +110,9 @@ layers:
   - PASTE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - PREV
+  - PLAY PAUSE
+  - NEXT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
