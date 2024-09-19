@@ -27,6 +27,22 @@
         };
     };
 
+    macros {
+        copy_macro: copy_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_CONTROL &kp C>;
+            label = "COPY_MACRO";
+        };
+
+        paste_macro: paste_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_CONTROL &kp V>;
+            label = "PASTE_MACRO";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -66,12 +82,12 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&kp TILDE  &kp F1      &kp F2     &kp F3      &kp F4       &kp F5        &kp F6         &kp F7          &kp F8          &kp F9           &kp F10   &kp F11
-&kp GRAVE  &kp N1      &kp N2     &kp N3      &kp N4       &kp N5        &kp PAGE_UP    &kp BACKSPACE   &kp UP_ARROW    &kp DELETE       &kp N0    &kp F12
-&trans     &trans      &trans     &trans      &trans       &trans        &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RPAR  &kp PIPE
-&trans     &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp CAPSLOCK  &kp LBKT       &kp RBKT        &kp SEMI        &kp COLON        &kp BSLH  &trans
-&trans     &trans      &trans     &trans      &trans       &trans        &trans         &trans          &trans          &trans           &trans
-                                                                         &kp A          &kp B           &kp C           &kp D            &kp E
+&kp TILDE  &kp F1      &kp F2     &kp F3       &kp F4        &kp F5        &kp F6         &kp F7          &kp F8          &kp F9           &kp F10   &kp F11
+&kp GRAVE  &kp N1      &kp N2     &kp N3       &kp N4        &kp N5        &kp PAGE_UP    &kp BACKSPACE   &kp UP_ARROW    &kp DELETE       &kp N0    &kp F12
+&trans     &trans      &trans     &trans       &trans        &trans        &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RPAR  &kp PIPE
+&trans     &kp K_UNDO  &kp K_CUT  &copy_macro  &paste_macro  &kp CAPSLOCK  &kp LBKT       &kp RBKT        &kp SEMI        &kp COLON        &kp BSLH  &trans
+&trans     &trans      &trans     &trans       &trans        &trans        &trans         &trans          &trans          &trans           &trans
+                                                                           &kp A          &kp B           &kp C           &kp D            &kp E
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
