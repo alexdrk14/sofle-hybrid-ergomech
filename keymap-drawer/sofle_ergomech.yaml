@@ -39,10 +39,10 @@ layers:
   - )
   - '|'
   - {t: ▽, type: trans}
-  - AC UNDO
-  - AC CUT
-  - AC COPY
-  - AC PASTE
+  - UNDO
+  - CUT
+  - COPY
+  - PASTE
   - CAPSLOCK
   - '['
   - ']'
