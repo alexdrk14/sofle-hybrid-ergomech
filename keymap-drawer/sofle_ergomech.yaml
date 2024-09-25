@@ -39,8 +39,8 @@ layers:
   - )
   - '|'
   - {t: ▽, type: trans}
-  - UNDO
-  - CUT
+  - '&undo_macro'
+  - '&cut_macro'
   - '&copy_macro'
   - '&paste_macro'
   - CAPSLOCK
