@@ -31,7 +31,8 @@
         copy_macro: copy_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_CONTROL &kp C>;
+            bindings = <&macro_press>, <&kp LEFT_CONTROL &kp C>;
+
             label = "COPY_MACRO";
         };
 
