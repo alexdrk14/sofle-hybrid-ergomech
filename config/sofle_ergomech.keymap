@@ -39,7 +39,8 @@
         paste_macro: paste_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_CONTROL &kp V>;
+            bindings = <&kp LEFT_CONTROL &kp V>, <&macro_press>;
+
             label = "PASTE_MACRO";
         };
     };
